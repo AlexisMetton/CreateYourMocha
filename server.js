@@ -37,6 +37,9 @@ app.delete('/notes/:id', (req, res) => {
 });
 
 const PORT = 3000;
+
 app.listen(PORT, () => {
     console.log(`🚀 Serveur de notes sur http://localhost:${PORT}`);
 });
+
+module.exports = app;

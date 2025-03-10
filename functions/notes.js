@@ -28,6 +28,11 @@ const deleteNote = (id) => {
     return null;
 };
 
+const resetNotes = () => {
+    notes = [];
+    nextId = 1;
+};
+
 module.exports={
-    addNote,getAllNotes,getNoteById,updateNote, deleteNote
+    addNote,getAllNotes,getNoteById,updateNote, deleteNote, resetNotes
 }
